@@ -58,7 +58,7 @@
     
     //explore view animation
 //   UIView animateWithDuration:<#(NSTimeInterval)#> delay:<#(NSTimeInterval)#> options:<#(UIViewAnimationOptions)#> animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>
-    self.exploreView.center.y = 471;
+    //self.exploreView.center.y = 471;
     
 }
 
