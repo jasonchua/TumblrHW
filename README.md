@@ -2,7 +2,7 @@ TumblrHW
 ========
 
 * **How many hours did it take to complete?**
-  * 3 + 2 hours...
+  * 3 + 2+2 hours...
 * **Which required and optional stories have you completed?**
 
       * :white_large_square: Tapping "Log in" from the Home page should show the login form.
