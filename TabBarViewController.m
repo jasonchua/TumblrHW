@@ -57,8 +57,8 @@
     //[self.contentView addSubview:self.homeViewController];
     
     //explore view animation
-//   UIView animateWithDuration:<#(NSTimeInterval)#> delay:<#(NSTimeInterval)#> options:<#(UIViewAnimationOptions)#> animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>
-    //self.exploreView.center.y = 471;
+//   UIView animateWithDuration:.8 delay:0 options:<#(UIViewAnimationOptions)#> animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>
+    self.exploreView.center = CGPointMake(self.exploreView.center.x,0);
     
 }
 
