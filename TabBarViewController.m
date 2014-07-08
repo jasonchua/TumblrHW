@@ -19,13 +19,13 @@
 @property (nonatomic,strong) AccountViewController *accountViewController;
 @property (nonatomic,strong) TrendingViewController *trendingViewController;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UIImageView *exploreView;
 
 - (IBAction)onHomeButton:(id)sender;
 - (IBAction)onSearchButton:(id)sender;
 - (IBAction)onComposeButton:(id)sender;
 - (IBAction)onAccountButton:(id)sender;
 - (IBAction)onTrendingButton:(id)sender;
-
 
 
 @end
@@ -43,6 +43,7 @@
         self.accountViewController = [[AccountViewController alloc] init];
         self.trendingViewController = [[TrendingViewController alloc] init];
         
+        
     }
     return self;
 }
@@ -54,6 +55,10 @@
     //load home view in contentView
     [self onHomeButton:nil];
     //[self.contentView addSubview:self.homeViewController];
+    
+    //explore view animation
+//   UIView animateWithDuration:<#(NSTimeInterval)#> delay:<#(NSTimeInterval)#> options:<#(UIViewAnimationOptions)#> animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>
+    self.exploreView.center.y = 471;
     
 }
 
