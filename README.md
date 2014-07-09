@@ -7,7 +7,7 @@ TumblrHW
 
       * :white_large_square: Tapping "Log in" from the Home page should show the login form.
       * :white_large_square: Compose button should show the various post buttons without animation.
-      * :white_large_square: When not on the search tab, the explore popover should appear and bounce.
+      * :white_check_mark: When not on the search tab, the explore popover should appear and bounce.
       * :white_check_mark: Tab bar should be implemented as a view with 5 buttons.
       * :white_check_mark: Implement the 4 tabs (Home, Search, Account, and Trending) as scrollviews that contain screenshots.
       
