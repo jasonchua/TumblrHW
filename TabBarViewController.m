@@ -77,30 +77,34 @@
 - (IBAction)onHomeButton:(id)sender {
     self.homeViewController.view.frame = self.contentView.frame;
     [self.contentView addSubview:self.homeViewController.view];
-
+    self.exploreView.hidden = NO;
 
 }
 
 - (IBAction)onSearchButton:(id)sender {
     self.searchViewController.view.frame = self.contentView.frame;
     [self.contentView addSubview:self.searchViewController.view];
+    self.exploreView.hidden = YES;
 
 }
 
 - (IBAction)onComposeButton:(id)sender {
 //dosomething
+    self.exploreView.hidden = NO;
 
 }
 
 - (IBAction)onAccountButton:(id)sender {
     self.accountViewController.view.frame = self.contentView.frame;
     [self.contentView addSubview:self.accountViewController.view];
+    self.exploreView.hidden = NO;
 
 }
 
 - (IBAction)onTrendingButton:(id)sender {
     self.trendingViewController.view.frame = self.contentView.frame;
     [self.contentView addSubview:self.trendingViewController.view];
+    self.exploreView.hidden = NO;
 
 }
 @end
