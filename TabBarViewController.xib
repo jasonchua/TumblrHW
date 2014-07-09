@@ -83,7 +83,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explore-01" translatesAutoresizingMaskIntoConstraints="NO" id="8oD-Ni-dO2">
-                    <rect key="frame" x="8" y="465" width="174" height="64"/>
+                    <rect key="frame" x="8" y="471" width="174" height="64"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>

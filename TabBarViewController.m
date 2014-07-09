@@ -56,9 +56,15 @@
     [self onHomeButton:nil];
     //[self.contentView addSubview:self.homeViewController];
     
+}
+
+
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog((@"View did appear"));
     //explore view animation
-//   UIView animateWithDuration:.8 delay:0 options:<#(UIViewAnimationOptions)#> animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>
-    self.exploreView.center = CGPointMake(self.exploreView.center.x,0);
+    [UIView animateWithDuration:.8 delay:0 options:(UIViewAnimationOptionRepeat |UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionAutoreverse) animations:^{
+        self.exploreView.center = CGPointMake(self.exploreView.center.x,490);
+    } completion:nil];
     
 }
 
@@ -71,6 +77,7 @@
 - (IBAction)onHomeButton:(id)sender {
     self.homeViewController.view.frame = self.contentView.frame;
     [self.contentView addSubview:self.homeViewController.view];
+
 
 }
 
