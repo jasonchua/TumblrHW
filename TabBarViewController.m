@@ -93,7 +93,7 @@
 }
 
 - (IBAction)onComposeButton:(id)sender {
-//dosomething
+//present ComposeViewController
     self.exploreView.hidden = NO;
 
 }

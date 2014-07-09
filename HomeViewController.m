@@ -11,6 +11,7 @@
 @interface HomeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *homeImage;
 @property (weak, nonatomic) IBOutlet UIScrollView *homeScrollView;
+- (IBAction)onLoginButton:(UIButton *)sender;
 
 @end
 
@@ -43,4 +44,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onLoginButton:(UIButton *)sender {
+    //present LoginViewController
+}
 @end

@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *accountScrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *accountImage;
+- (IBAction)onLoginButton:(UIButton *)sender;
 @end
 
 @implementation AccountViewController
@@ -43,4 +44,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onLoginButton:(UIButton *)sender {
+    //present LoginViewController
+}
 @end
