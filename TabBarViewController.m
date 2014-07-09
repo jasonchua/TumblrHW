@@ -84,8 +84,12 @@
 - (IBAction)onSearchButton:(id)sender {
     self.searchViewController.view.frame = self.contentView.frame;
     [self.contentView addSubview:self.searchViewController.view];
-    self.exploreView.hidden = YES;
-
+    
+    
+    [UIView animateWithDuration:2.0 animations:^{
+        self.exploreView.hidden = YES;
+    }];
+    
 }
 
 - (IBAction)onComposeButton:(id)sender {
