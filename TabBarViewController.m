@@ -11,6 +11,7 @@
 #import "SearchViewController.h"
 #import "AccountViewController.h"
 #import "TrendingViewController.h"
+#import "ComposeViewController.h"
 
 @interface TabBarViewController ()
 
@@ -18,6 +19,8 @@
 @property (nonatomic,strong) SearchViewController *searchViewController;
 @property (nonatomic,strong) AccountViewController *accountViewController;
 @property (nonatomic,strong) TrendingViewController *trendingViewController;
+@property (nonatomic,strong) ComposeViewController *composeViewController;
+
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIImageView *exploreView;
 
@@ -42,6 +45,7 @@
         self.searchViewController = [[SearchViewController alloc] init];
         self.accountViewController = [[AccountViewController alloc] init];
         self.trendingViewController = [[TrendingViewController alloc] init];
+        self.composeViewController = [[ComposeViewController alloc] init];
         
         
     }
@@ -63,7 +67,7 @@
     NSLog((@"View did appear"));
     //explore view animation
     [UIView animateWithDuration:.8 delay:0 options:(UIViewAnimationOptionRepeat |UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionAutoreverse) animations:^{
-        self.exploreView.center = CGPointMake(self.exploreView.center.x,490);
+        self.exploreView.center = CGPointMake(self.exploreView.center.x,498);
     } completion:nil];
     
 }
@@ -93,7 +97,8 @@
 }
 
 - (IBAction)onComposeButton:(id)sender {
-//present ComposeViewController
+    self.composeViewController.view.frame = self.contentView.frame;
+    [self.contentView addSubview:self.composeViewController.view];
     self.exploreView.hidden = NO;
 
 }

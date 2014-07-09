@@ -7,11 +7,15 @@
 //
 
 #import "AccountViewController.h"
+#import "LoginViewController.h"
 
 @interface AccountViewController ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *accountScrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *accountImage;
+
+@property (nonatomic,strong) LoginViewController *loginViewController;
+
 - (IBAction)onLoginButton:(UIButton *)sender;
 @end
 
@@ -28,6 +32,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        //self.loginViewController = [[LoginViewController alloc] init];
+        
     }
     return self;
 }
@@ -46,5 +53,8 @@
 
 - (IBAction)onLoginButton:(UIButton *)sender {
     //present LoginViewController
+    LoginViewController *lvc = [[LoginViewController alloc] init];
+    lvc.modalTransitionStyle = UIModalTransitionStyleCoverVertical; // Rises from below
+    [self presentViewController:lvc animated:YES completion:nil];
 }
 @end

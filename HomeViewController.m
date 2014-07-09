@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "LoginViewController.h"
 
 @interface HomeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *homeImage;
@@ -46,5 +47,9 @@
 
 - (IBAction)onLoginButton:(UIButton *)sender {
     //present LoginViewController
+    LoginViewController *lvc = [[LoginViewController alloc] init];
+    lvc.modalTransitionStyle = UIModalTransitionStyleCoverVertical; // Rises from below
+    NSLog(@"Loginbuttonhomeview");
+
 }
 @end
